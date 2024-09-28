@@ -1,0 +1,21 @@
+.main_picture {
+    position: absolute;
+    height:140%;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.up_panel {
+    position: absolute;
+    height: 84px;
+    right: 0px;
+    z-index: 0;
+}
+
+.head_text {
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Bebas Neue Regular';
+    z-index: 1;
+}

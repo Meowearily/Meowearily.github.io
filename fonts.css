@@ -1,0 +1,9 @@
+/* @font-face {
+    font-family: ASIE;
+    src: url('./fonts/ASIE.TTF') format('ttf');
+} */
+
+@font-face {
+    font-family: Bebas Neue Regular;
+    src: url('./fonts/Bebas Neue Regular.TTF') format('ttf');
+}
