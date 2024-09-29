@@ -4,6 +4,16 @@
 } */
 
 @font-face {
-    font-family: Bebas Neue Regular;
-    src: url('./fonts/Bebas Neue Regular.TTF') format('ttf');
+    font-family: BebasNeue;
+    src: url('./fonts/BebasNeue-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Federo;
+    src: url('./fonts/FederoRegular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Abel;
+    src: url('./fonts/Abel-Regular.ttf') format('ttf');
 }
