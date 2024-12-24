@@ -91,25 +91,72 @@
 //     }
 // });
 
+// let currentIndex = 0;
+// const carouselItems = document.querySelectorAll('.carousel-item');
+ 
+// function goToSlide(index) {
+//   if (index < 0) {
+//     index = carouselItems.length - 1;
+//   } else if (index >= carouselItems.length) {
+//     index = 0;
+//   }
+//   currentIndex = index;
+//   document.querySelector('.carousel-inner').style.transform = `translateX(-${currentIndex * 100}%)`;
+// }
+
+// function goToSlide(index) {
+//     // Определяем количество элементов, которые нужно прокрутить
+//     const itemsToScroll = 3;
+  
+//     // Обновляем индекс с учетом прокрутки нескольких элементов
+//     index = (index + itemsToScroll) % carouselItems.length;
+    
+//     // Убедитесь, что индекс остается в пределах массива
+//     if (index < 0) {
+//       index = carouselItems.length - itemsToScroll;
+//     }
+  
+//     currentIndex = index;
+//     document.querySelector('.carousel-inner').style.transform = `translateX(-${(currentIndex * 100) / itemsToScroll}%)`;
+//   }
+  
+
+// function goToNextSlide() {
+//   goToSlide(currentIndex + 1);
+// }
+ 
+// function goToPrevSlide() {
+//   goToSlide(currentIndex - 1);
+// }
+ 
+// setInterval(goToNextSlide, 3000); // автоматическая прокрутка каждые 3 секунды
+
 let currentIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
- 
+
 function goToSlide(index) {
-  if (index < 0) {
-    index = carouselItems.length - 1;
-  } else if (index >= carouselItems.length) {
-    index = 0;
+    // const itemsToScroll = carouselItems.length;
+
+    
+  
+    // Процедура для зацикливания индексов
+    const iterations = carouselItems.length - 2;
+    index = ((index % iterations) +iterations) % iterations;
+  
+    // Установка текущего индекса
+    currentIndex = index;
+  
+    // Применение трансформации
+    document.querySelector('.carousel-inner').style.transform = `translateX(-${(currentIndex * 100) / carouselItems.length}%)`;
   }
-  currentIndex = index;
-  document.querySelector('.carousel-inner').style.transform = `translateX(-${currentIndex * 100}%)`;
-}
- 
-function goToNextSlide() {
-  goToSlide(currentIndex + 1);
-}
- 
-function goToPrevSlide() {
-  goToSlide(currentIndex - 1);
-}
- 
-setInterval(goToNextSlide, 3000); // автоматическая прокрутка каждые 3 секунды
+  
+  function goToNextSlide() {
+    goToSlide(currentIndex + 1); // Прокрутка на 1 элемент вперед
+  }
+  
+  function goToPrevSlide() {
+    goToSlide(currentIndex - 1); // Прокрутка на 1 элемент назад
+  }
+  
+  setInterval(goToNextSlide, 3000); // автоматическая прокрутка каждые 3 секунды
+  

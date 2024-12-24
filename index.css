@@ -401,7 +401,7 @@ header nav ul li.btn a:hover {
    
   .carousel-inner {
     display: flex;
-    width: 100%;
+    width: 200%;
     transition: transform 0.5s;
   }
    
