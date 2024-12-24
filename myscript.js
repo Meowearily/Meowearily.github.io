@@ -46,3 +46,47 @@ document.getElementById('scrollToAboutMe').addEventListener('click', function() 
         console.error('Element with ID "AboutMe" not found.');
     }
 });
+
+document.getElementById('scrollToProjects').addEventListener('click', function() {
+    const Projects = document.getElementById('Projects');
+    if (Projects) {
+        Projects.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        console.error('Element with ID "Projects" not found.');
+    }
+});
+
+document.getElementById('scrollToQuestions').addEventListener('click', function() {
+    const Questions = document.getElementById('Questions');
+    if (Questions) {
+        Questions.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        console.error('Element with ID "Projects" not found.');
+    }
+});
+
+document.getElementById('scrollToContacts').addEventListener('click', function() {
+    const Contacts = document.getElementById('Contacts');
+    if (Contacts) {
+        Contacts.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        console.error('Element with ID "Projects" not found.');
+    }
+});
+
+document.getElementById('scrollToMainPage').addEventListener('click', function() {
+    const MainPage = document.getElementById('MainPage');
+    if (MainPage) {
+        MainPage.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        console.error('Element with ID "Projects" not found.');
+    }
+});
