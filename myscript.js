@@ -2,14 +2,14 @@
 
 // document.getElementById('myButton').style.color = "red";
 
-var title = document.getElementById('myButton');
-// title.style.color = "red";
+// var title = document.getElementById('myButton');
+// // title.style.color = "red";
 
-title.onclick = function() {
-    title.style.color = "red";
-}
+// title.onclick = function() {
+//     title.style.color = "red";
+// }
 
-alert("Meow");
+// alert("Meow");
 
 // Выберем кнопку и форму
 // const $button = document.querySelector('a');
@@ -36,57 +36,80 @@ alert("Meow");
 //     });
 // });
 
-document.getElementById('scrollToAboutMe').addEventListener('click', function() {
-    const AboutMe = document.getElementById('AboutMe');
-    if (AboutMe) {
-        AboutMe.scrollIntoView({
-            behavior: 'smooth'
-        });
-    } else {
-        console.error('Element with ID "AboutMe" not found.');
-    }
-});
+// document.getElementById('scrollToAboutMe').addEventListener('click', function() {
+//     const AboutMe = document.getElementById('AboutMe');
+//     if (AboutMe) {
+//         AboutMe.scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     } else {
+//         console.error('Element with ID "AboutMe" not found.');
+//     }
+// });
 
-document.getElementById('scrollToProjects').addEventListener('click', function() {
-    const Projects = document.getElementById('Projects');
-    if (Projects) {
-        Projects.scrollIntoView({
-            behavior: 'smooth'
-        });
-    } else {
-        console.error('Element with ID "Projects" not found.');
-    }
-});
+// document.getElementById('scrollToProjects').addEventListener('click', function() {
+//     const Projects = document.getElementById('Projects');
+//     if (Projects) {
+//         Projects.scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     } else {
+//         console.error('Element with ID "Projects" not found.');
+//     }
+// });
 
-document.getElementById('scrollToQuestions').addEventListener('click', function() {
-    const Questions = document.getElementById('Questions');
-    if (Questions) {
-        Questions.scrollIntoView({
-            behavior: 'smooth'
-        });
-    } else {
-        console.error('Element with ID "Projects" not found.');
-    }
-});
+// document.getElementById('scrollToQuestions').addEventListener('click', function() {
+//     const Questions = document.getElementById('Questions');
+//     if (Questions) {
+//         Questions.scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     } else {
+//         console.error('Element with ID "Projects" not found.');
+//     }
+// });
 
-document.getElementById('scrollToContacts').addEventListener('click', function() {
-    const Contacts = document.getElementById('Contacts');
-    if (Contacts) {
-        Contacts.scrollIntoView({
-            behavior: 'smooth'
-        });
-    } else {
-        console.error('Element with ID "Projects" not found.');
-    }
-});
+// document.getElementById('scrollToContacts').addEventListener('click', function() {
+//     const Contacts = document.getElementById('Contacts');
+//     if (Contacts) {
+//         Contacts.scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     } else {
+//         console.error('Element with ID "Projects" not found.');
+//     }
+// });
 
-document.getElementById('scrollToMainPage').addEventListener('click', function() {
-    const MainPage = document.getElementById('MainPage');
-    if (MainPage) {
-        MainPage.scrollIntoView({
-            behavior: 'smooth'
-        });
-    } else {
-        console.error('Element with ID "Projects" not found.');
-    }
-});
+// document.getElementById('scrollToMainPage').addEventListener('click', function() {
+//     const MainPage = document.getElementById('MainPage');
+//     if (MainPage) {
+//         MainPage.scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     } else {
+//         console.error('Element with ID "Projects" not found.');
+//     }
+// });
+
+let currentIndex = 0;
+const carouselItems = document.querySelectorAll('.carousel-item');
+ 
+function goToSlide(index) {
+  if (index < 0) {
+    index = carouselItems.length - 1;
+  } else if (index >= carouselItems.length) {
+    index = 0;
+  }
+  currentIndex = index;
+  document.querySelector('.carousel-inner').style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+ 
+function goToNextSlide() {
+  goToSlide(currentIndex + 1);
+}
+ 
+function goToPrevSlide() {
+  goToSlide(currentIndex - 1);
+}
+ 
+setInterval(goToNextSlide, 3000); // автоматическая прокрутка каждые 3 секунды
