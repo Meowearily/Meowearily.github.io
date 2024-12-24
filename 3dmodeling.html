@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meowearily portfolio</title>
+    <link rel="stylesheet" href="reset.css">    
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="icon" href="/icon.ico" type="image/x-icon"> -->
+    <!-- <link type="image/png" href="/icon.png" rel="icon"> -->
+    <link rel="icon" href="images/icon.png">
+    <!-- <link type="image/x-icon" href="/icon.ico" rel="icon"> -->
+    <!-- <link rel="shortcut icon" href="/logo.png" type="image/png"> -->
+</head>
+
+<style>
+    .modeling-section {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .header {
+      background-color: #000;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-transform: uppercase;
+      justify-content: center;
+      padding: 13px 70px;
+      font: 400 30px Bebas Neue, sans-serif;
+    }
+    .header-content {
+      display: flex;
+      width: 100%;
+      max-width: 1203px;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .nav-group {
+      display: flex;
+      gap: 40px 100px;
+      color: #fff;
+    }
+    .logo {
+      aspect-ratio: 1.1;
+      object-fit: contain;
+      object-position: center;
+      width: 63px;
+      align-self: start;
+    }
+    .back-link-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .back-link {
+      background-color: #000;
+      padding: 12px 14px;
+    }
+    .message-btn-wrapper {
+      display: flex;
+      flex-direction: column;
+      color: #000;
+      margin: auto 0;
+    }
+    .message-btn {
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 5px 70px;
+    }
+    
+    .gallery-section {
+      align-self: center;
+      margin-top: 4.3125rem;
+      width: 100%;
+      max-width: 90rem;
+    }
+    .gallery-grid {
+      gap: 20px;
+      display: flex;
+    }
+    .gallery-left {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 41%;
+      margin-left: 0;
+    }
+    .gallery-image {
+      aspect-ratio: 0.6;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 20px;
+      flex-grow: 1;
+    }
+    .gallery-right {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 59%;
+      margin-left: 20px;
+    }
+    .preview-container {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      color: #fff;
+      font: 400 2rem Abel, sans-serif;
+    }
+    .preview-image {
+      aspect-ratio: 1.36;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 1.25rem;
+    }
+    .preview-text {
+      border-radius: 1.25rem;
+      background-color: #000000;
+      margin-top: 1.4375rem;
+      padding: 9.5rem 20.20rem 8.5rem;
+      align-self: center;
+    }
+    
+    @media (max-width: 991px) {
+      .header {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+      .header-content {
+        max-width: 100%;
+      }
+      .nav-group {
+        max-width: 100%;
+      }
+      .back-link {
+        padding-right: 20px;
+      }
+      .message-btn {
+        padding: 0 20px;
+      }
+      .title {
+        max-width: 100%;
+        font-size: 40px;
+      }
+      .gallery-section {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+      .gallery-grid {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+      .gallery-left {
+        width: 100%;
+      }
+      .gallery-image {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+      .gallery-right {
+        width: 100%;
+      }
+      .preview-container {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+      .preview-image {
+        max-width: 100%;
+      }
+      .preview-text {
+        max-width: 100%;
+        padding: 100px 20px 110px;
+      }
+      .footer {
+        max-width: 100%;
+        margin-top: 40px;
+        padding: 0 20px;
+      }
+      .footer-content {
+        max-width: 100%;
+      }
+    }
+  </style>
+
+<body>
+    <div class="modeling-section">
+        <div class="up_panel">
+            <header class="container">
+                <img src="images/logo.png" alt="logo_small">
+                    <nav>
+                        <ul>
+                            <li><a href="#">ABOUT ME</a></li>
+                            <li><a href="#">PROJECTS</a></li>
+                            <li><a href="#">QUESTIONS</a></li>
+                            <li class="btn"><a href="#">SEND MESSAGE</a></li>
+                        </ul>
+                    </nav>  
+            </header>
+        </div>
+        
+        <h2 style="margin-top: 5%;">3D Modeling</h2>
+        
+        <section class="gallery-section">
+          <div class="gallery-grid">
+            <div class="gallery-left">
+              <img src="images/robocat.png" alt="Robocat">
+            </div>
+            <div class="gallery-right">
+              <div class="preview-container">
+                <img src="images/flydragonroom.png" alt="Fly dragon room">
+                <div class="preview-text">See more later</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <footer class="footer">
+          <div class="footer-content">
+            <nav class="nav-links">
+              <img src="images/logob.png" alt="Footer logo">
+              <span class="nav-text">main page</span>
+              <img src="images/arrow.png" alt="Arrow">
+              <span class="nav-text">3d modeling</span>
+            </nav>
+            <div class="social-links">
+              <img src="images/gmail.png" alt="Gmail logo">
+              <img src="images/telegram.png" alt="Telegram logo">
+            </div>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>

@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meowearily portfolio</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">    
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="icon" href="/icon.ico" type="image/x-icon"> -->
+    <!-- <link type="image/png" href="/icon.png" rel="icon"> -->
+    <link rel="icon" href="images/icon.png">
+    <!-- <link type="image/x-icon" href="/icon.ico" rel="icon"> -->
+    <!-- <link rel="shortcut icon" href="/logo.png" type="image/png"> -->
+    
 
 </head>
 <body>
@@ -15,10 +23,10 @@
             <header class="container">
                 <img src="images/logo.png" alt="logo_small">
                     <nav>
-                        <ul>
-                            <li><a href="#">ABOUT ME</a></li>
-                            <li><a href="#">PROJECTS</a></li>
-                            <li><a href="#">QUESTIONS</a></li>
+                        <ul id="header_content">
+                            <li><a href="scrollToAboutMe">ABOUT ME</a></li>
+                            <li><a href="scrollToProjects">PROJECTS</a></li>
+                            <li><a href="scrollToQuestions">QUESTIONS</a></li>
                             <li class="btn"><a href="#">SEND MESSAGE</a></li>
                         </ul>
                     </nav>  
@@ -28,7 +36,7 @@
         <div class="hero">
             <img class="main_picture" src="images/main_pic.png" alt="main picture">
             <div class="hero--info">
-                <h1>
+                <h1 class="federo-regular">
                     PORTFOLIO
                 </h1>
                 <p>
@@ -41,22 +49,107 @@
         <div class="separator"></div>
 
         <div class="container aboutme">
-            <h2>ABOUT ME</h2>
-        </div>
+            <h2 id="AboutMe">ABOUT ME</h2>
 
-        <div class="container projects">
-            <h2>PROJECTS</h2>
-
-            <div class="artworks">
-                <div class="block">
-                    <img src="images/UP_arts.png" alt="University projects">
-                    <img src="images/P_arts.png" alt="Personal arts">
-                    <img src="images/3D_models.png" alt="3D modeling">
-                    <img src="images/GD_arts.png" alt="Game design">
-                </div>
+            <div class="discription">
+                <img id="one" src="images/pic_me.png" alt="Picture of me">
+                <p id="two">
+                    Hi! My name is Diana and I’m artist.
+                    Now I’m a proactive IT in Design student at the Herzen University of St. Petersburg.
+                    Possess patience, logical reasoning, high drawing skills and knowledge. Can deal with 3D-models and program at C++. 
+                </p>
+                <h3 id="tree">I WORK IN:</h3>
+                <img id="four" src="images/sketchbook.png" alt="Sketchbook logo">
+                <img id="five" src="images/photoshop.png" alt="Photoshop logo">
+                <img id="six" src="images/figma.png" alt="Figma logo">
+                <img id="seven" src="images/maya.png" alt="Maya Autodesk logo">
+                <h3 id="eight">SKILLS:</h3>
+                <p id="nine">composition</p>
+                <img id="ten" src="images/composition_bar.png" alt="Composition bar">
+                <p id="eleven">color theory</p>
+                <img id="twelwe" src="images/colortheory_bar.png" alt="Color theory bar">
+                <p id="thirdteen">graphic</p>
+                <img id="fourteen" src="images/graphic_bar.png" alt="Graphic bar">
             </div>
         </div>
 
+        <div class="container projects">
+            <!-- <h2 id="myButton">PROJECTS</h2> -->
+            <h2>PROJECTS</h2>
+
+            <div class="artworks">
+                    <div id="fifteen">
+                        <a href="universityprojects.html"><img src="images/UP_arts.png" alt="University projects"></a>
+                    </div>
+                    <div id="sixteen">
+                        <img id="two" src="images/P_arts.png" alt="Personal arts">
+                    </div>
+                    <div id="seventeen">
+                        <a href="3dmodeling.html"><img id="three" src="images/3D_models.png" alt="3D modeling"></a>
+                    </div>
+                    <div id="eightteen">
+                        <img id="four" src="images/GD_arts.png" alt="Game design">
+                    </div> 
+            </div>
+        </div>
+
+        <div class="container questions">
+            <h2>QUESTIONS</h2>
+
+            <div class="Q&A">
+                <p>There will be most common questions</p>
+                <h3>How you can order art from me?</h3>
+                <p>Click on the “send message” button and you will see my contacts, then just text me</p>
+                <h3>How much my arts cost?</h3>
+                <p>It depends from how much work there will be, all prices are personal for every customer</p>
+                <h3>How long i will draw your art?</h3>
+                <p>It also depends from art, so I will say you after we confirm your order</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="container contacts">
+            <h2>CONTACTS</h2>
+
+            <div class="contact">
+                <p>If you interesting in my art works or have questions, you can text me there:</p>
+                <img src="images/gmail.png" alt="Gmail logo">
+                <p>kuklinadiana12@gmail.com</p>
+                <img src="images/telegram.png" alt="Telegram logo">
+                <p>https://t.me/Meowearily</p>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="container reviews">
+            <h2>REVIEWS</h2>
+
+            <div class="rev">
+                <img src="images/R1.png" alt="Review 1">
+                <img src="images/R2.png" alt="Review 2">
+                <img src="images/R3.png" alt="Review 3">
+            </div>
+        </div>
+        </div>
+
+        <div class="bottom_panel">
+            <footer class="footer">
+                <div class="footer-content">
+                  <nav class="nav-links">
+                    <img src="images/logob.png" alt="Footer logo">
+                    <span class="nav-text">main page</span>
+                    <img src="images/arrow.png" alt="Arrow">
+                    <span class="nav-text">3d modeling</span>
+                  </nav>
+                  <div class="social-links">
+                    <img src="images/gmail.png" alt="Gmail logo">
+                    <img src="images/telegram.png" alt="Telegram logo">
+                  </div>
+                </div>
+              </footer>
+            </div>
+        </div>
     </div>
 
 
@@ -73,5 +166,8 @@
     <footer>
 
     </footer> -->
+
+    <script src="myscript.js"></script>
+    <script src="scrollToAboutMe.js"></script>
 </body>
 </html>
