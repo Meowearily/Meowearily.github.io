@@ -17,10 +17,10 @@
     
 </head>
 <body>
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
         <div class="up_panel">
             <header class="container">
-                <a href="#MainPage"><img src="images/logo.png" alt="Meowearily logo, click if you want to go to the main page"></a>
+                <a href="#MainPage" ><img src="images/logo.png" alt="Meowearily logo, click if you want to go to the main page"></a>
                     <nav>
                         <ul id="header_content">
                             <li><a href="#AboutMe">ABOUT ME</a></li>
@@ -33,21 +33,26 @@
         </div>
 
         <div class="hero">
-            <a href="#AboutMe"><img id="MainPage" class="main_picture" src="images/main_pic.png" alt="Main picture with Apothecary diaries bookcover"></a>
-            <div class="hero--info">
-                <h1 class="federo-regular">
-                    PORTFOLIO
-                </h1>
-                <p>
-                    click anywhere
-                </p>
-                <img src="images/logo.png" alt="Meowearily logo">
-            </div>
+            <!-- <a href="#AboutMe"><img id="MainPage" class="main_picture" src="images/main_pic.png" alt="Main picture with Apothecary diaries bookcover"></a> -->
+            <a href="#AboutMe">
+                <section id="MainPage" class="banner">
+                    <div class="hero--info">
+                        <h1 class="federo-regular">
+                            PORTFOLIO
+                        </h1>
+                        <p>
+                            click anywhere
+                        </p>
+                        <img src="images/logo.png" alt="Meowearily logo">
+                    </div>
+                </section> 
+            </a>
+            
         </div>
 
-        <div class="separator"></div>
+        <!-- <div class="separator"></div> -->
 
-        <div class="container aboutme">
+        <section class="container aboutme">
             <h2 id="AboutMe">ABOUT ME</h2>
 
             <div class="discription">
@@ -58,7 +63,7 @@
                     Possess patience, logical reasoning, high drawing skills and knowledge. Can deal with 3D-models and program at C++. 
                 </p>
                 <h3 id="three">I WORK IN:</h3>
-                <div id="four">
+                <div id="four" class="icons">
                     <img src="images/sketchbook.png" alt="Sketchbook logo, program where I usually draw">
                     <img src="images/photoshop.png" alt="Photoshop logo, program for editing photos and pictures">
                     <img src="images/figma.png" alt="Figma logo, program for vector graphic and design">
@@ -72,9 +77,9 @@
                 <p id="thirdteen">graphic</p>
                 <img id="fourteen" src="images/graphic_bar.png" alt="Graphic bar, it's almost hundred percent full">
             </div>
-        </div>
+        </section>
 
-        <div class="container projects">
+        <section class="container projects">
             <!-- <h2 id="myButton">PROJECTS</h2> -->
             <h2 id="Projects">PROJECTS</h2>
 
@@ -92,9 +97,9 @@
                         <img id="four" src="images/GD_arts.png" alt="Gallery with game design projects">
                     </div> 
             </div>
-        </div>
+        </section>
 
-        <div class="container questions">
+        <section class="container questions">
             <h2 id="Questions">QUESTIONS</h2>
 
             <div class="Q&A">
@@ -106,27 +111,36 @@
                 <h3>How long i will draw your art?</h3>
                 <p>It also depends from art, so I will say you after we confirm your order</p>
             </div>
-        </div>
-        </div>
+        </section>
+        
 
-        <div class="container contacts">
+        <section class="container contacts">
             <h2 id="Contacts">CONTACTS</h2>
-
+            
             <div class="contact">
                 <p>If you interesting in my art works or have questions, you can text me there:</p>
-                <img src="images/gmail.png" alt="Gmail logo, you can write me there">
+                <div class="icons">
+                    <img src="images/gmail.png" alt="Gmail logo, you can write me there">
+                </div>
+                
                 <a href="mailto:kuklinadiana12@gmail.com&body=привет?subject=арты">kuklinadiana12@gmail.com</a>
                 <!-- <p>kuklinadiana12@gmail.com</p> -->
-                <img src="images/telegram.png" alt="Telegram logo, you also can write to me there">
+                <div class="icons">
+                    <img src="images/telegram.png" alt="Telegram logo, you also can write to me there">
+                </div>
+                
                 <a href="https://t.me/Meowearily">https://t.me/Meowearily</a>
                 <!-- <p>https://t.me/Meowearily</p> -->
-                <img src="images/phone.png" alt="Phone logo, it's better not to call">
+                <div class="icons">
+                    <img src="images/phone.png" alt="Phone logo, it's better not to call">
+                </div>
+                
                 <a href="tel:+78005553535">better don't call</a>
             </div>
-        </div>
-        </div>
+        </section>
+        
 
-        <div class="container reviews">
+        <section class="container reviews">
             <h2>REVIEWS</h2>
 
             <!-- <div id="carousel" class="carousel">
@@ -171,17 +185,20 @@
                 
                 
             </div> -->
-        </div>
-        </div>
+        </section>
+        
 
         <div class="bottom_panel">
             <footer class="footer">
                 <div class="footer-content">
                   <nav class="nav-links">
-                    <a href="#MainPage"><img src="images/logob.png" alt="Meowearily logo, click if you want to go to the main page"></a>
+                    <div class="icons">
+                        <a href="#MainPage"><img src="images/logob.png" alt="Meowearily logo, click if you want to go to the main page"></a>
+                    </div>
+                    
                     <a href="#MainPage"><span class="nav-text">main page</span></a>
                   </nav>
-                  <div class="social-links">
+                  <div class="icons">
                     <a href="mailto:kuklinadiana12@gmail.com&body=привет?subject=арты"><img src="images/gmail.png" alt="Gmail logo, click if you want to write me"></a>
                     <a href="https://t.me/Meowearily"><img src="images/telegram.png" alt="Telegram logo, click if you want to write me"></a>
                   </div>
@@ -189,7 +206,7 @@
               </footer>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 
 
 
